@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:coba/bloc/color_bloc.dart';
-import 'package:coba/bloc/color_event.dart';
+import 'package:coba/bloc/color_event.dart';  
 import 'package:coba/bloc/color_state.dart';
 
 void main() {
@@ -30,7 +30,7 @@ class ColorController extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Flutter RGB Controller'),
+        title: Text('Color Customizer'),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
@@ -38,7 +38,7 @@ class ColorController extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
-              'Color Controller',
+              'Customize Color',
               style: TextStyle(fontSize: 20),
             ),
             SizedBox(height: 20),
